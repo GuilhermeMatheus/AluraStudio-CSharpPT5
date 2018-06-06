@@ -28,6 +28,6 @@ namespace ByteBank.Modelos.Funcionarios
 
         public abstract void AumentarSalario();
 
-        internal abstract double GetBonificacao();
+        internal protected abstract double GetBonificacao();
     }
 }

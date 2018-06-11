@@ -12,6 +12,21 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Olá, mundo!");
+            Console.WriteLine(123);
+            Console.WriteLine(10.5);
+            Console.WriteLine(true);
+
+            object conta = new ContaCorrente(456, 687876);
+            object desenvolvedor = new Desenvolvedor("4564654");
+
+            Console.WriteLine(conta);
+
+            Console.ReadLine();
+        }
+
+        static void TestaString()
+        {
             // pagina?argumentos
             // 012345678
 
@@ -87,11 +102,6 @@ namespace ByteBank.SistemaAgencia
             Console.WriteLine(String.IsNullOrEmpty(textoQualquer));
             Console.ReadLine();
 
-
-
-
-
-
             ExtratorValorDeArgumentosURL extrator = new ExtratorValorDeArgumentosURL("");
 
             string url = "pagina?moedaOrigem=real&moedaDestino=dolar";
@@ -103,9 +113,6 @@ namespace ByteBank.SistemaAgencia
             Console.WriteLine(url);
             string argumentos = url.Substring(indiceInterrogacao + 1);
             Console.WriteLine(argumentos);
-
-
-            Console.ReadLine();
         }
     }
 

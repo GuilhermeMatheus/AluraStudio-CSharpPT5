@@ -12,49 +12,24 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Olá, mundo!");
-            Console.WriteLine(123);
-            Console.WriteLine(10.5);
-            Console.WriteLine(true);
+            string urlTeste = "https://www.bytebank.com/cambio";
+            int indiceByteBank = urlTeste.IndexOf("https://www.bytebank.com");
 
-            object conta = new ContaCorrente(456, 687876);
-            object desenvolvedor = new Desenvolvedor("4564654");
+            // Olá, meu nome é Guilherme e você pode entrar em contato comigo
+            // através do número 8457-4456!
 
-            string contaToString = conta.ToString();
-
-            Console.WriteLine("Resultado " + contaToString);
-            Console.WriteLine(conta);
+            // Meu nome é Guilherme, me ligue em 4784-4546
 
 
-            Cliente carlos_1 = new Cliente();
-            carlos_1.Nome = "Carlos";
-            carlos_1.CPF = "458.623.120-03";
-            carlos_1.Profissao = "Designer";
-
-            Cliente carlos_2 = new Cliente();
-            carlos_2.Nome = "Carlos";
-            carlos_2.CPF = "458.623.120-03";
-            carlos_2.Profissao = "Designer";
-
-            ContaCorrente conta_2 = new ContaCorrente(456, 87654);
+            Console.WriteLine(urlTeste.StartsWith("https://www.bytebank.com"));
+            Console.WriteLine(urlTeste.EndsWith("cambio/"));
 
 
-            if(carlos_1.Equals(carlos_2))
-            {
-                Console.WriteLine("São iguais!");
-            }
-            else
-            {
-                Console.WriteLine("Não são iguais!");
-            }
+            Console.WriteLine(urlTeste.Contains("ByteBank"));
 
-
-
+            
             Console.ReadLine();
-        }
 
-        static void TestaString()
-        {
             // pagina?argumentos
             // 012345678
 
